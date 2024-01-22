@@ -16,7 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;800&display=swap" rel="stylesheet">
 
     <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
 
     <!-- tailwind custom style  -->
     <script>
@@ -32,6 +34,7 @@
         }
     </script>
 
+
     <!--  custom styles -->
     <style>
         .font-manrope {
@@ -42,16 +45,29 @@
             color: #FF4240;
         }
 
+
         .bg-custom-image1 {
-            background-image: url('../assignment-3/Images/2.png');
+            background-image: url('./Images/2.png');
             background-size: cover;
+            border-radius: 15px;
             background-position: center;
+            background-repeat: no-repeat;
         }
 
         .bg-custom-image2 {
-            background-image: url('../assignment-3/Images/3.png');
+            background-image: url('./Images/3.png');
             background-size: cover;
+            border-radius: 15px;
             background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .bg-custom-image3 {
+            background-image: url('./Images/4.png');
+            background-size: cover;
+            border-radius: 15px;
+            background-position: center;
+            background-repeat: no-repeat;
         }
     </style>
 
@@ -149,42 +165,86 @@
             </div>
         </section>
 
-        <!-- Program Sections 3 background img  -->
-        <div class=" mt-16 mb-16 ">
+        <!-- Program Sections   -->
+        <div class=" mt-16 mb-10">
             <h3 class=" text-4xl font-extrabold text-[#131318] text-center">Program Sections</h3>
-            <p class="mt-4 text-base font-medium text-center text-[#5A5A5D]">Optimize the Professional
+            <p class="mt-4 text-base font-medium text-center text-[#5A5A5D] px-40">Optimize the Professional
                 Hockey Club's program with structured sections, enhancing player management, training modules,
                 analytics, and fan engagement for success.</p>
         </div>
-        <div class="flex gap-5 my-10">
-            <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-5">
-                <div class="bg-custom-image1 px-10 py-10">
-                    <h3 class="text-3xl font-extrabold pb-4">Junior Program</h3>
-                    <p class="mt-4 text-base font-medium text-left text-[#5A5A5D] pb-3">The Professional Hockey Club's
-                        Junior Program is a dynamic platform nurturing emerging talents through specialized training,
-                        strategic coaching, and fostering a love for the game, shaping future hockey stars.</p>
-                    <a class="btn bg-btn-bg-color text-white">Register Now!</a>
+        <!-- 3 background img -->
+        <div class=" mb-5">
+            <div class="grid sm:grid-cols-1 gap-5 md:flex">
+                <div class="bg-custom-image1">
+                    <div class="pb-4 pt-10 md:pt-24 px-10">
+                        <h3 class=" text-3xl text-white font-extrabold pb-5">Junior Program</h3>
+                        <p class="text-base font-medium pb-5 text-white text-left">The Professional Hockey Club's Junior
+                            Program is a dynamic platform nurturing emerging talents through specialized training,
+                            strategic coaching, and fostering a love for the game, shaping future hockey stars.</p>
+                        <div class="pb-10">
+                            <a class="btn btn-error bg-btn-bg-color pb text-white">Register Now!</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-custom-image2 px-10 py-10">
-                    <h3 class="text-3xl font-extrabold pb-4">Teenager Program</h3>
-                    <p class="mt-4 text-base font-medium text-left text-[#5A5A5D] pb-3">The Professional Hockey Club's
-                        Teenager Program fosters young talent with expert coaching, skill development, and mentorship.
-                        Cultivating a passion for the sport and nurturing future stars on the ice.</p>
-                    <a class="btn bg-btn-bg-color text-white">Register Now!</a>
+                <div class="bg-custom-image2">
+                    <div class="pb-10 pt-10 md:pt-24 px-10 ">
+                        <h3 class=" text-3xl text-white font-extrabold pb-5">Teenager Program</h3>
+                        <p class="text-base font-medium pb-5 text-white text-left">The Professional Hockey Club's
+                            Teenager
+                            Program fosters young talent with expert coaching, skill development, and mentorship.
+                            Cultivating a passion for the sport and nurturing future stars on the ice.</p>
+                        <div>
+                            <a class="btn btn-error bg-btn-bg-color  text-white">Register Now!</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="my-8">
-            <div class="bg-custom-image3 px-10 py-10">
-                <h3 class="text-3xl font-extrabold pb-4">Professional Program</h3>
-                <p class="mt-4 text-base font-medium text-left text-[#5A5A5D] pb-3">Elevate the Professional Hockey Club
-                    with a meticulously crafted professional program. Focused on player development, strategic coaching,
+        <div class="bg-custom-image3">
+            <div class=" card-body md:pt-52">
+                <h3 class=" text-3xl text-white font-extrabold pb-4">Professional Program</h3>
+                <p class="max-w-2xl font-medium text-white text-left">Elevate the Professional Hockey Club
+                    with a meticulously crafted professional program. Focused on player development, strategic
+                    coaching,
                     and fan engagement, it aims for excellence on and off the ice.</p>
-                <a class="btn bg-btn-bg-color text-white">Register Now!</a>
+                <div>
+                    <a class="btn btn-error bg-btn-bg-color  text-white">Register Now!</a>
+                </div>
             </div>
         </div>
     </header>
     <main class="md:container md:mx-auto">
+        <section>
+            <div class=" mt-16 mb-10">
+                <h3 class=" text-4xl font-extrabold text-[#131318] text-center">Our New Products</h3>
+                <p class="mt-4 text-base font-medium text-center text-[#5A5A5D] px-40">Explore our innovative new
+                    products,
+                    meticulously designed to elevate your experience. From cutting-edge technology to stylish designs,
+                    our offerings redefine excellence and cater to diverse preferences. </p>
+            </div>
+        </section>
+
+        <!-- social icons section  -->
+        <div class=" text-center rounded-lg bg-base-200 ">
+            <div class="py-10">
+                <h3 class=" text-4xl font-extrabold text-[#131318] pb-4">Social Media</h3>
+                <div class=""><a href=""><i class="fa fa-facebook" aria-hidden="true"
+                            style="font-size: 40px; cursor: pointer; color:blueviolet"></i></a>
+
+                    <a href=""><i class="fa fa-instagram" aria-hidden="true"
+                            style="font-size: 40px; cursor: pointer; color:  #fa7e1e ;"></i></a>
+
+                    <a href=""><i class="fa fa-twitter" aria-hidden="true"
+                            style="font-size: 40px; cursor: pointer; color:  #1DA1F2;"></i></a>
+
+                    <a href=""><i class="fa fa-linkedin" aria-hidden="true"
+                            style="font-size: 40px; cursor: pointer; color: #0077b5;"></i></a>
+
+                    <a href=""><i class="fa fa-github" aria-hidden="true"
+                            style="font-size: 40px; cursor: pointer; color: #2b3137;"></i></a>
+                </div>
+            </div>
+        </div>
 
     </main>
     <footer>
