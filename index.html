@@ -1,11 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hockey Club</title>
+
+    <!-- tailwind and daisy ui cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;800&display=swap" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <!-- tailwind custom style  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'btn-bg-color': '#FF4240',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!--  custom styles -->
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        span {
+            color: #FF4240;
+        }
+
+        .bg-custom-image1 {
+            background-image: url('../assignment-3/Images/2.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .bg-custom-image2 {
+            background-image: url('../assignment-3/Images/3.png');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+
 </head>
-<body>
-    
+
+<body class="font-manrope">
+    <header class="md:container md:mx-auto">
+        <div class="navbar bg-base-100 ">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a><span>Home</span></a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-4xl">Hockey <span>Club</span></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a><span>Home</span></a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+
+                <!-- <i class="fa fa-search" style="color: white;"></i> -->
+                <div class="  md:mr-5 lg:mr-5"><img src="/Images/Frame.svg" alt=""></div>
+                <a class="btn bg-btn-bg-color text-white">Get Ticket</a>
+            </div>
+        </div>
+        <!-- slider section  -->
+        <div class="carousel w-full mt-10">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="Images/1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full ">
+                <img src="Images/4.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+        <!-- Professional Hockeys Club section  -->
+        <div class=" mt-16 mb-16 ">
+            <h3 class=" text-4xl font-extrabold text-[#131318] text-center">Professional Hockeys Club</h3>
+            <p class="mt-4 text-base font-medium text-center text-[#5A5A5D]">Elite hockey club excels with
+                top-tier talent, strategic prowess, and a relentless pursuit of
+                championship glory on the ice.</p>
+        </div>
+        <section class="my-5">
+            <div class="grid gap-5 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 text-center">
+                <div class="mb-6">
+                    <div class="radial-progress text-error mb-5" style="--value:67;" role="progressbar">67%</div>
+                    <h3 class="text-[#131318] text-xl font-semibold">Prayer Facility</h3>
+                    <p class="mt-2.5 text-base font-normal text-center text-[#5A5A5D]">Amet consectetur.
+                        Condimentum dignissim adipiscing.
+                </div>
+                <div class="mb-6">
+                    <div class="radial-progress text-info mb-5" style="--value:95;" role="progressbar">95%</div>
+                    <h3 class="text-[#131318] text-xl font-semibold">Prayer Facility</h3>
+                    <p class="mt-2.5 text-base font-normal text-center text-[#5A5A5D]">Amet consectetur.
+                        Condimentum dignissim adipiscing.
+                </div>
+                <div class="mb-6">
+                    <div class="radial-progress text-warning mb-5" style="--value:90;" role="progressbar">90%</div>
+                    <h3 class="text-[#131318] text-xl font-semibold">Prayer Facility</h3>
+                    <p class="mt-2.5 text-base font-normal text-center text-[#5A5A5D]">Amet consectetur.
+                        Condimentum dignissim adipiscing.
+                </div>
+                <div class="mb-6 ">
+                    <div class="radial-progress mb-5" style="--value:80;" role="progressbar">80%</div>
+                    <h3 class="text-[#131318] text-xl font-semibold">Prayer Facility</h3>
+                    <p class="mt-2.5 text-base font-normal text-center text-[#5A5A5D] ">Amet consectetur.
+                        Condimentum dignissim adipiscing.
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Sections 3 background img  -->
+        <div class=" mt-16 mb-16 ">
+            <h3 class=" text-4xl font-extrabold text-[#131318] text-center">Program Sections</h3>
+            <p class="mt-4 text-base font-medium text-center text-[#5A5A5D]">Optimize the Professional
+                Hockey Club's program with structured sections, enhancing player management, training modules,
+                analytics, and fan engagement for success.</p>
+        </div>
+        <div class="flex gap-5 my-10">
+            <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-5">
+                <div class="bg-custom-image1 px-10 py-10">
+                    <h3 class="text-3xl font-extrabold pb-4">Junior Program</h3>
+                    <p class="mt-4 text-base font-medium text-left text-[#5A5A5D] pb-3">The Professional Hockey Club's
+                        Junior Program is a dynamic platform nurturing emerging talents through specialized training,
+                        strategic coaching, and fostering a love for the game, shaping future hockey stars.</p>
+                    <a class="btn bg-btn-bg-color text-white">Register Now!</a>
+                </div>
+                <div class="bg-custom-image2 px-10 py-10">
+                    <h3 class="text-3xl font-extrabold pb-4">Teenager Program</h3>
+                    <p class="mt-4 text-base font-medium text-left text-[#5A5A5D] pb-3">The Professional Hockey Club's
+                        Teenager Program fosters young talent with expert coaching, skill development, and mentorship.
+                        Cultivating a passion for the sport and nurturing future stars on the ice.</p>
+                    <a class="btn bg-btn-bg-color text-white">Register Now!</a>
+                </div>
+            </div>
+        </div>
+        <div class="my-8">
+            <div class="bg-custom-image3 px-10 py-10">
+                <h3 class="text-3xl font-extrabold pb-4">Professional Program</h3>
+                <p class="mt-4 text-base font-medium text-left text-[#5A5A5D] pb-3">Elevate the Professional Hockey Club
+                    with a meticulously crafted professional program. Focused on player development, strategic coaching,
+                    and fan engagement, it aims for excellence on and off the ice.</p>
+                <a class="btn bg-btn-bg-color text-white">Register Now!</a>
+            </div>
+        </div>
+    </header>
+    <main class="md:container md:mx-auto">
+
+    </main>
+    <footer>
+
+    </footer>
+
 </body>
+
 </html>
